@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="editType">
+        <item>Meeting</item>
+        <item>Anniversary</item>
+        <item>Date</item>
+        <item>Party</item>
+        <item>School or Work</item>
+    </string-array>
+
+    <string name="app_name">Scheduler</string>
+    <string name="addSched">Add Schedule</string>
+    <string name="viewSched">View Schedule</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">Add Schedule</string>
+    <string name="view">View Schedule</string>
+    <string name="title_activity_add">addActivity</string>
+    <string name="time">Time:</string>
+    <string name="description">Description:</string>
+    <string name="deadline">Deadline:</string>
+    <string name="remind">Remind on:</string>
+    <string name="Type">Type:</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_activity_view">activity_view</string>
+    <string name="title_activity_view">view</string>
+    <string name="title_activity_view2">view2</string>
+
+</resources>
