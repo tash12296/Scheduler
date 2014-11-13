@@ -1,0 +1,9 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:background="@drawable/background">
+
+</LinearLayout><!-- From: file:/C:/Users/Natasha/AndroidStudioProjects/Scheduler_Sem1/app/src/main/res/layout/activity_day_sched.xml -->

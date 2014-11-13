@@ -28,5 +28,7 @@
     <string name="title_activity_activity_view">activity_view</string>
     <string name="title_activity_view">view</string>
     <string name="title_activity_view2">view2</string>
+    <string name="title_activity_calendar_view">calendarView</string>
+    <string name="title_activity_day_sched">Schedule for the Day</string>
 
 </resources>

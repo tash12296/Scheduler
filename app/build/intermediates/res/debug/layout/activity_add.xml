@@ -1,0 +1,153 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="572dp"
+tools:context="com.example.natasha.scheduler_sem1.addActivity$PlaceholderFragment"
+    android:background="@drawable/background">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/description"
+    android:id="@+id/textView2"
+    android:textSize="30dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/deadline"
+    android:id="@+id/textView3"
+    android:textSize="30dp"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/editType"
+    android:layout_alignParentLeft="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/remind"
+    android:id="@+id/textView4"
+    android:textSize="30dp"
+    android:layout_below="@+id/deadlineInputTime"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Type"
+    android:id="@+id/textView5"
+    android:textSize="30dp"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/descriptionInput"
+    android:layout_alignParentLeft="true" />
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/descriptionInput"
+    android:editable="true"
+    android:maxLines="2"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@+id/textView2"
+    android:layout_alignParentLeft="true"
+    android:hint="Description" />
+
+<Spinner
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/editType"
+    android:entries="@array/editType"
+
+    android:spinnerMode="dropdown"
+    android:layout_below="@+id/descriptionInput"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignBottom="@+id/textView5" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="date"
+    android:ems="10"
+    android:id="@+id/deadlineInputDate"
+    android:hint="Deadline"
+    android:layout_below="@+id/editType"
+    android:layout_toRightOf="@+id/textView3"
+    android:editable="true"
+    android:clickable="true"
+    android:onClick="onClick"
+    android:text="Date"
+    android:focusable="false" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="date"
+    android:ems="10"
+    android:id="@+id/remindonInputDate"
+    android:hint="Remind On"
+    android:editable="true"
+    android:layout_below="@+id/deadlineInputTime"
+    android:layout_toRightOf="@+id/textView4"
+    android:onClick="onClick"
+    android:clickable="true"
+    android:text="Date"
+    android:focusable="false" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/back"
+    android:id="@+id/backButton"
+    android:layout_below="@+id/remindonInputDate"
+    android:layout_toLeftOf="@+id/remindonInputDate"
+    android:layout_marginTop="51dp"
+    android:onClick="buttonOnBack" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/save"
+    android:id="@+id/saveButton"
+    android:layout_alignBottom="@+id/backButton"
+    android:layout_alignRight="@+id/deadlineInputDate"
+    android:layout_alignEnd="@+id/deadlineInputDate"
+    android:clickable="true"
+    android:onClick="onClick" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/deadlineInputTime"
+        android:hint="Deadline"
+        android:editable="true"
+        android:layout_below="@+id/deadlineInputDate"
+        android:layout_alignRight="@+id/saveButton"
+        android:layout_alignEnd="@+id/saveButton"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="time"
+        android:focusable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/remindonInputTime"
+        android:hint="Deadline"
+        android:editable="true"
+        android:layout_below="@+id/remindonInputDate"
+        android:layout_toRightOf="@+id/textView2"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:text="Time"
+        android:focusable="false" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Natasha/AndroidStudioProjects/Scheduler_Sem1/app/src/main/res/layout/activity_add.xml -->

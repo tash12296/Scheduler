@@ -24,6 +24,14 @@
             android:name=".view"
             android:label="@string/viewSched" >
         </activity>
+        <activity
+            android:name=".calendarView"
+            android:label="@string/title_activity_calendar_view" >
+        </activity>
+        <activity
+            android:name=".daySched"
+            android:label="@string/title_activity_day_sched" >
+        </activity>
     </application>
 
 </manifest>

@@ -14,14 +14,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.Toast;
 
 
+
 public class MyActivity extends ActionBarActivity {
 
-
 EditText randomQuotes;
+    CalendarView calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,24 +35,10 @@ EditText randomQuotes;
                     .commit();
         }
 
-     /*   randomQuotes = (EditText) findViewById(R.id.randomQuotes);
+       // randomQuotes = (EditText) findViewById(R.id.randomQuotes);
 
-        int quoteNum = (int) (Math.random() * 20);
-        switch (quoteNum) {
-            case 1:
-                System.out.println(" mag bbreak din sila");
-                break;
-            case 2:
-                System.out.println(" gising na, may ibabaksak ka pang subject");
-                break;
-            case 3:
-                System.out.println("lalala");
-                break;
-            case 4:
-                System.out.println("testing");
-                break;
-        }
-        randomQuotes.setText(quoteNum);*/
+
+        //randomQuotes.setText()
     }
 
     @Override
@@ -59,6 +47,12 @@ EditText randomQuotes;
         getMenuInflater().inflate(R.menu.my, menu);
         return true;
     }
+
+    public void calendarView(View v){
+       CalendarView calendar=(CalendarView)v;
+        startActivity(new Intent(getApplication(),calendarView.class));
+
+     }
 
     public void buttonOnClickAdd(View v){
 
